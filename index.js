@@ -37,10 +37,7 @@ function esPrimo(num){
   if(num <= 1){
     return false;
   }
-  if(num === 2){
-    return true;
-  }
-  for(let i = 3; i*i <= num; i +=2){
+  for(let i = 2; i <= num; i++){
     if(num %i === 0){
       return false;
     }
@@ -67,9 +64,10 @@ function obtenerPares(arrayNum){
   return arrayPar;
 }
 
-function pintarArray(numeros) {
+
+/* function pintarArray(numeros) {
   return "[" + numeros.join() + " ]";
-}
+} */
 
 function arrayMapi(arr, funcion){
   let res = [];
